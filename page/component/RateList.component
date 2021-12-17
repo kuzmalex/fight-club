@@ -1,0 +1,4 @@
+<li><div class = "list_row">
+  <div class = "name">${user}$</div>
+  <div class = "count">${rate}$</div>
+</div></li>

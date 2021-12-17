@@ -1,0 +1,135 @@
+.container {
+  background: -webkit-linear-gradient(top, #222838 0%, #131621 100%);
+  height: 98vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 2fr 1fr 4fr;
+  grid-template-areas:
+  "header"
+  "button"
+  "score_board";
+}
+
+.header {
+   grid-area: header;
+}
+
+.button {
+  margin: 0 auto;
+  grid-area:button;
+  width: 334px;
+  text-align: center;
+}
+
+.rate {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+  padding: 20px 50px 20px 50px;
+  font-size: 20px;
+  color: rgb(250, 250, 250); 
+}
+
+.score_board {
+  margin: 0 auto;
+  grid-area: score_board;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.score_board ul{
+	width: 334px;
+    margin:10;
+    padding:0;
+    list-style: none;
+    border:5px solid rgb(25, 33, 49);
+    background: rgb(15, 23, 30);
+	box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
+}
+.score_board ul li{
+    position: relative;
+    color:#FFF;
+    font-family: helvetica;
+    padding:2% 5%;
+    border-bottom: 1px solid #555;
+}
+
+.score_board ul li:last-child{
+    border-bottom:none;
+}
+
+.list_row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.name{
+    font-weight:bold;
+}
+.count{
+    color:rgb(255, 215, 0);
+    font-weight:bold;
+}
+
+.pagination_section{
+	margin: 1em;
+}
+
+body
+{
+  background:#333;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.refresh{
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+  overflow: hidden;
+  padding: 20px 50px 20px 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  position:relative;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-position .7s,box-shadow .4s;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.refresh:before, .refresh:after {
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+}
+
+.refresh {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 3px 0px #33E7EA;
+  background: linear-gradient(rgba(15, 53, 89, 0), rgba(15, 53, 89, 0.5), rgba(15, 53, 89, 0));
+}
+.refresh:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 8px 0px #33E7EA;
+}
+.refresh:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.refresh:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.metrics{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: white;
+}
+
+.refresh b {
+  font-weight: 700;
+}

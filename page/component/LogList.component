@@ -1,0 +1,3 @@
+<li><div class = "list_row">
+  <div class = "rectangle">${log}$</div>
+</div></li>

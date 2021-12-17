@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fight Club</title>
+
+</head>
+<body>
+<div class="container">
+<div class="header"></div>
+<div class="button">
+<div class="rate">${lastGameResult}$</div>
+<div class="rate">Ваш рейтинг: ${userRate}$</div>
+   <form method="get" action="https://localhost:9000/start">
+  <button class='start'><b>Начать дуэль</b></button>
+  </form>
+</div>
+<div class='score_board'>
+$C{pagination}$
+<ul>
+$L{RateList}$
+</ul>
+</div>
+</div>
+  
+</body>
+</html>

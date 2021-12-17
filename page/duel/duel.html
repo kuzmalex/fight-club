@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fight club</title>
+
+</head>
+<body>
+<div class="container">
+<ul class = "log_list">
+$L{LogList}$
+</ul>
+<div class = "strength1">Сила: ${allyStrength}$</div>
+<div class = "hp_bar_1" style="--p:${allyHealthPercent}$%">
+
+  <div class = "hp_bar_text">${allyHealth}$/${allyMaxHealth}$<br>${allyName}$</div>
+  </div>
+  <div class = "strength2">Сила: ${enemyStrength}$</div>
+  <div class = "hp_bar_2" style="--p:${enemyHealthPercent}$%">
+  <div class = "hp_bar_text">${enemyHealth}$/${enemyMaxHealth}$<br>${enemyName}$</div>
+  </div>
+<div class="button">
+  <form method="get" action="https://localhost:9000/hit">
+  <button ${hitAvailable}$ class='hit'><b>Ударить</b></button>
+  </form>
+  <form method="get" action="https://localhost:9000/">
+  <button class='refresh'><b>Обновить</b></button>
+  </form>
+</div>
+<img src="/images/1.png" class="robot1">
+<img src="/images/3.png" class="robot2">
+</div>
+<div class='score_board'>
+
+</div>
+</div>
+</body>
+</html>
